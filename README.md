@@ -9,32 +9,32 @@
 
 # Результаты 
 ## Обучение с нуля: 
-  ResNet18(`best_resnet18_scratch.pth`)
+  # ResNet18(`best_resnet18_scratch.pth`)
       accuracy : 0.6168
             f1 : 0.6142
-  GoogleNet(`best_googlenet_scratch.pth` )
+  # GoogleNet(`best_googlenet_scratch.pth` )
       accuracy : 0.5179
             f1 : 0.5078
-  EfficintNet-B0( `best_efficientnet_b0_scratch.pth`)
+  # EfficintNet-B0( `best_efficientnet_b0_scratch.pth`)
       accuracy : 0.6877
             f1 : 0.6832
 
 ## Дообучение головы:
-  ResNet18(`best_resnet18_finetune_head.pth` )
+  # ResNet18(`best_resnet18_finetune_head.pth` )
       accuracy : 0.8763
             f1 : 0.8751
-  GoogleNet(`best_googlenet_finetune_head.pth`)
+  # GoogleNet(`best_googlenet_finetune_head.pth`)
       accuracy : 0.7978
             f1 : 0.7960
-  EfficientNet-B0(`best_efficientnet_b0_finetune_head.pth`)
+  # EfficientNet-B0(`best_efficientnet_b0_finetune_head.pth`)
       accuracy : 0.8863
             f1 : 0.8847
 
 ## Дообучение с разморозкой последних слоев:
-  ResNet18(`best_resnet18_finetune_layer4.pth`) - разморозка layer4
+  # ResNet18(`best_resnet18_finetune_layer4.pth`) - разморозка layer4
       accuracy : 0.8831
             f1 : 0.8811
-  EfficientNet-B0(`best_efficientnet_b0_finetune_last.pth`) - разморозка последних блоков
+  # EfficientNet-B0(`best_efficientnet_b0_finetune_last.pth`) - разморозка последних блоков
       accuracy : 0.9032
             f1 : 0.9017
 
@@ -52,18 +52,18 @@
 
 # Структура репозитория
 
-├── configs/                 # YAML-конфиги всех экспериментов
-├── scripts/
-│   ├── train.py             # обучение
-│   └── evaluate.py          # оценка на test
-├── src/
-│   ├── data.py              # даталоадеры + трансформации
-│   ├── models.py            # создание моделей 
-│   └── train_utils.py       # train/val loop 
-├── notebooks/               # исходный ноутбук 
-├── requirements.txt
-├── .gitignore
-└── README.md
+# ├── configs/                 # YAML-конфиги всех экспериментов
+# ├── scripts/
+# │   ├── train.py             # обучение
+# │   └── evaluate.py          # оценка на test
+# ├── src/
+# │   ├── data.py              # даталоадеры + трансформации
+# │   ├── models.py            # создание моделей 
+# │   └── train_utils.py       # train/val loop 
+# ├── notebooks/               # исходный ноутбук 
+# ├── requirements.txt
+# ├── .gitignore
+# └── README.md
 
 ## Запуск обучения
 
